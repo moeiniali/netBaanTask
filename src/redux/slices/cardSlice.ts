@@ -53,7 +53,8 @@ const initialState: CardSlice = {
 export const fetchData = createAsyncThunk('fetchData', async () => {
   try {
 
-    const response = await axios.get(`${BaseUrl}/72e7e252-2f2b-462c-8e60-30a8a0cac801`)
+    const response = await axios.get(`${BaseUrl}/0a346f61-45b6-4720-82e1-bb01ef4abed2`)
+    console.log(response);
     return response.data
 
 
@@ -81,12 +82,12 @@ const cardSlice = createSlice({
       .addCase(fetchData.fulfilled, (state, action) => {
         console.log('fulfilled', action);
         state.loading = false;
-        console.log(action?.payload.domain);
+        console.log(action?.payload.domainData);
 
         state.data = action?.payload
-        state.domainData = action?.payload.domain;
-        state.IpData = action?.payload.ip;
-        state.cloudData = action?.payload.cloud;
+        state.domainData = action?.payload.domainData;
+        state.IpData = action?.payload.IpData;
+        state.cloudData = action?.payload.cloudData;
 
       })
       .addCase(fetchData.rejected, (state, action) => {
