@@ -1,0 +1,69 @@
+{
+ "loading": false,
+ "data": {
+   "assets": [
+     {
+       "id": 1,
+       "name": "Asset 1",
+       "type": "domain",
+       "grade": "A",
+       "lastSeen": 1672531200000,
+       "total_vuls": 5
+     },
+     {
+       "id": 2,
+       "name": "Asset 2",
+       "type": "cloud",
+       "grade": "B",
+       "lastSeen": 1672617600000,
+       "total_vuls": 2
+     },
+     {
+       "id": 3,
+       "name": "Asset 3",
+       "type": "ip",
+       "grade": "C",
+       "lastSeen": 1672704000000,
+       "total_vuls": 10
+     },
+     {
+       "id": 4,
+       "name": "Asset 4",
+       "type": "domain",
+       "grade": "A",
+       "lastSeen": 1672790400000,
+       "total_vuls": 0
+     }
+   ]
+ },
+ "domainData": {
+   "ips": 10,
+   "live": ["192.168.1.1", "192.168.1.2"],
+   "monitored": ["192.168.1.3"],
+   "ports": 3,
+   "total": 20,
+   "total_live": 5,
+   "total_monitored": 2,
+   "vulns": 1
+ },
+ "IpData": {
+   "ips": 15,
+   "live": ["192.168.1.4"],
+   "monitored": ["192.168.1.5"],
+   "ports": 2,
+   "total": 25,
+   "total_live": 8,
+   "total_monitored": 3,
+   "vulns": 0
+ },
+ "cloudData": {
+   "ips": 5,
+   "live": ["192.168.1.6"],
+   "monitored": [],
+   "ports": 1,
+   "total": 10,
+   "total_live": 3,
+   "total_monitored": 1,
+   "vulns": 2
+ }
+}
